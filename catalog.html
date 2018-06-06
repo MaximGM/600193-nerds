@@ -17,13 +17,13 @@
 				<li><a href="contacts">Контакты</a></li>
 			</ul>
 			<ul class="basket">
-				<li>Корзина</li>
+				<li><a href="basket">Корзина</a></li>
 			</ul>
       <!-- это блок не в теге нав и даже не в хедере, а после-->
-			<h1>Магазин готовых шаблонов</h1>
 		</nav>
 	</header>
 	<main class="container">
+		<h1>Магазин готовых шаблонов</h1>
 		<section class="left-filter">
 			<ul>
 				<li>Стоимость:</li>
@@ -33,50 +33,46 @@
 				<li>Особенности:</li>
 				<!--форма-->
 			</ul>
-			<span class="button">Показать</span>
+			<button class="button">Показать</button>
 		</section>
 		<section class="portfolio">
 			<p>Сортировать:</p>
 			<ul>
-				<li><a>По цене</a></li>
-				<li><a>По типу</a></li>
-				<li><a>По названию</a></li>
+				<li><button class="button-sort">По цене</button></li>
+				<li><button class="button-sort">По типу</button></li>
+				<li><button class="button-sort">По названию</button></li>
 			</ul>
       <!-- потерял кнопки сортировки -->
 			<ul class="photos">
         <!-- каждый li - отдельный макет, в котором в своб очередь должна быть ссылка, а там уже картинка -->
-				<li class="photo">
-					<img src="img/photo-1.jpg" alt="photo-1">
-					<img src="img/photo-2.jpg" alt="photo-2">
-					<img src="img/photo-3.jpg" alt="photo-3">
-					<img src="img/photo-4.jpg" alt="photo-4">
-					<img src="img/photo-5.jpg" alt="photo-5">
-					<img src="img/photo-6.jpg" alt="photo-6">
-				</li>
+				<li><a href="#"><img src="img/photo-1.jpg" alt="photo-1"></a></li>
+				<li><a href="#"><img src="img/photo-2.jpg" alt="photo-2"></a></li>
+				<li><a href="#"><img src="img/photo-3.jpg" alt="photo-3"></a></li>
+				<li><a href="#"><img src="img/photo-4.jpg" alt="photo-4"></a></li>
+				<li><a href="#"><img src="img/photo-5.jpg" alt="photo-5"></a></li>
+				<li><a href="#"><img src="img/photo-6.jpg" alt="photo-6"></a></li>
 			</ul>
-      
       <!-- если ты пишешь, что это класс баттон, то почему не использовать как минимум button???
           Вообще это должен быть список, где в каждом ли есть ссылка, с номером страницы -->
-			<span class="button photos-button photos-button-1">1</span>"
-			<span class="button photos-button photos-button-2">2</span>"
-			<span class="button photos-button photos-button-3">3</span>"
-      
+          <ul class="page-numbers">
+			<li><button class="button-page-number"><a href="page-1.html">1</a></button></li>
+			<li><button class="button-page-number"><a href="page-2.html">2</a></button></li>
+			<li><button class="button-page-number"><a href="page-3.html">3</a></button></li>
+		 </ul>
       <!-- тоже ссылка -->
-			<span class="button photos-button photos-button-next">Следующая</span>"
+			<button class="button-next">Следующая</button>
 		</section>
 	</main>
-	<footer class="main-footer">
-			<div class="footer-map">
-				<a href="map.html">Карта</a>
-			</div>
-
-			<!--форма
-			<div class="contacts">
-				<b>Nerds design studio</b><br>
-        		191186, Санкт-Петербург,<br>
-        		ул. Б. Конюшная, д.19/8<br>
-        		тел. +7 (812) 275-75-75
-        		<a class="button button-contacts" href="write-us.html">Напишите нам</a> -->
+	<div class="map">
+				<div class="contacts">
+				<h2>Nerds design studio</h2>
+        		<address>191186, Санкт-Петербург,<br>
+        		ул. Б. Конюшная, д.19/8</address>
+        		<p>тел. +7 (812) 275-75-75</p>
+        		<a class="button button-contacts" href="write-us.html">Напишите нам</a>
+        	</div>
+		</div>
+		<footer class="main-footer">
 			<div class="footer-social">
 				<ul>
 					<li><a class="social-button" href="#">Вконтакте</a></li>

@@ -18,7 +18,7 @@
 			</ul>
 			<ul class="basket">
         <!-- Корзина - тоже ссылкой -->
-				<li>Корзина</li>
+				<li><a href="basket">Корзина</a></li>
 			</ul>
 		</nav>
 		<section class="slider">
@@ -30,7 +30,29 @@
           кнопка
           фон слайда будет вставлять не через Img, а через css свойство, так что тут img не надо 
       -->
-			<img src="img/slide.svg" alt="слайд-1">
+      		<ul class="slides">
+				<li class="slides-item">
+					<h1>Долго, дорого, скрупулезно.</h1>
+					<p>Математически выверенный дизайн<br>
+						для вашего сайта или мобильного приложения.
+					</p>
+					<button class="button-slides-1">Узнать больше</button> 
+				</li>
+				<li class="slides-item">
+					<h1>Долго, дорого, скрупулезно.</h1>
+					<p>Математически выверенный дизайн<br>
+						для вашего сайта или мобильного приложения.
+					</p>
+					<button class="button-slides-2">Узнать больше</button> 
+				</li>
+				<li class="slides-item">
+					<h1>Долго, дорого, скрупулезно.</h1>
+					<p>Математически выверенный дизайн<br>
+						для вашего сайта или мобильного приложения.
+					</p>
+					<button class="button-slides-3">Узнать больше</button> 
+				</li>
+			</ul>
 		</section>
 	</header>
 	<main class="container">
@@ -68,8 +90,8 @@
 		   <section class="about-us">
 		   	<h2 class="visually-hidden">О нас</h2>
         <!-- ниже ul и li не очень подходят, делай через div --> 
-		   	<ul class="about-us-list">
-		   		<li class="about-us-item">
+		   	<div class="about-us-list">
+		   		<div class="about-us-item">
 		   			<b>Мы - маленькая, но гордая<br>
 		   			дизайн-студия из Краснодара.</b>
 		   			<p>
@@ -77,59 +99,62 @@
 		   			</p>
 		   			<h3>Выполняем заказы на разработку:</h3>
             <!-- Дай какие-то классы списку и элементам ниже -->
-		   			<ul>
-		   				<li>
+		   			<ul class="services">
+		   				<li class="service-item">
 		   					Веб-сайтов любой сложности
 		   				</li>
-		   				<li>
+		   				<li class="service-item">
 		   					Мобильных приложений для IOS и Android
 		   				</li>
-		   				<li>
+		   				<li class="service-item">
 		   					Слайдшоу и видео для корпоративных презентаций
 		   				</li>
 		   			</ul>
-		   		</li>
-		   		<li class="about-us-item">
+		   		</div>
+		   		<div class="about-us-item">
 		   			<img src="img/logo2.svg" alt="nerds">
 		   			<h3>С 2004 года любим точность во всем:</h3>
             <!-- классы добавь, внтури ul не может быть других тегов кроме Li,
                  и вообще лучше делать через table -->
-		   			<ul>
-		   				<li>146%</li>
-		   				<p>Уровень самоотдачи</p>
-		   				<li>100%</li>
-		   				<p>Соблюдение сроков</p>
-		   				<li>50%</li>
-		   				<p>Минимальная предоплата</p>
-		   			</ul>
-		   		</li>
-		   	</ul>
+		   			<table>
+		   				<tr>
+		   					<td>146%</td>
+		   					<td>100%</td>
+		   					<td>50%</td>
+		   				</tr>
+		   				<tr>
+		   					<td>уровень самоотдачи</td>
+		   					<td>Соблюдение сроков</td>
+		   					<td>Минимальная предоплата</td>
+		   				</tr>
+		   			</table>
+		   		</div>
+		   	</div>
 		   </section>
 
 		   <section class="customers">
          <!-- опять нужно сделать вместо figures - li, в каждом ли a, а уже в каждом a картинка -->
-		   	<figure class="slides">
-		   		<img src="img/logo1.svg" alt="html-academy">
-		   		<img src="img/logo2.svg" alt="borodinski">
-		   		<img src="img/logo3.svg" alt="pink">
-		   		<img src="img/logo4.svg" alt="mishka">
-		   	</figure>
+		   	<ul class="slides">
+		   		<li><a href="htmlacademy.ru"><img src="img/logo1.svg" alt="html-academy"></a></li>
+		   		<li><a href="borodinski.ru"><img src="img/logo2.svg" alt="borodinski"></a></li>
+		   		<li><a href="pink.ru"><img src="img/logo3.svg" alt="pink"></a></li>
+		   		<li><a href="mishka.ru"><img src="img/logo4.svg" alt="mishka"></a></li>
+		   	</ul>
 		   </section>
 		</main>
+		<div class="map">
+				<div class="contacts">
+        <!-- блок контактов должен лежать в секции с картой, для адресса используй тег address, nerds - заголовок -->
+				<h2>Nerds design studio</h2>
+        		<address>191186, Санкт-Петербург,<br>
+        		ул. Б. Конюшная, д.19/8</address>
+            <!-- телефон отдельным тегом -->
+        		<p>тел. +7 (812) 275-75-75</p>
+        		<a class="button button-contacts" href="write-us.html">Напишите нам</a>
+        	</div>
+		</div>
 		<footer class="main-footer">
       <!-- map можно поставить до footer'a, ссылка внутри него не нужна -->
-			<div class="footer-map">
-				<a href="map.html">Карта</a>
-			</div>
-
-			<div class="contacts">
-        <!-- блок контактов должен лежать в секции с картой, для адресса используй тег address, nerds - заголовок -->
-				<b>Nerds design studio</b><br>
-        		191186, Санкт-Петербург,<br>
-        		ул. Б. Конюшная, д.19/8<br>
-            <!-- телефон отдельным тегом -->
-        		тел. +7 (812) 275-75-75
-        		<a class="button button-contacts" href="write-us.html">Напишите нам</a> -->
 			<div class="footer-social">
 				<ul>
 					<li><a class="social-button" href="#">Вконтакте</a></li>
