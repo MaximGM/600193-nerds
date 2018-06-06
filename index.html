@@ -17,10 +17,19 @@
 				<li><a href="contacts">Контакты</a></li>
 			</ul>
 			<ul class="basket">
+        <!-- Корзина - тоже ссылкой -->
 				<li>Корзина</li>
 			</ul>
 		</nav>
 		<section class="slider">
+      <!-- в этой секции должен быть список из слайдов. Их всего 3.
+       ul.slides
+         li.slides-item
+          Заголовок сдайда
+          текст слайда
+          кнопка
+          фон слайда будет вставлять не через Img, а через css свойство, так что тут img не надо 
+      -->
 			<img src="img/slide.svg" alt="слайд-1">
 		</section>
 	</header>
@@ -33,6 +42,7 @@
 		   			<p>
 		   				Мир никогда не будет прежним, после того как увидит ваш сайт!
 		   			</p>
+            <!-- потерял ссылку -->
 		   		</li>
 		   		<a class="button button-item-1" href="order.html">Заказать</a>
 		   		<li class="servise-item">
@@ -40,6 +50,7 @@
 		   			<p>
 		   				Покорите топ-10 приложений в AppStore и Google Play
 		   			</p>
+            <!-- потерял ссылку -->
 		   		</li>
 		   		<a class="button button-item-2" href="order.html">Заказать</a>
 		   		<li class="servise-item">
@@ -47,13 +58,16 @@
 		   			<p>
 		   				Вы даже не подозреваете, насколько вы изумительны!
 		   			</p>
+            <!-- потерял ссылку -->
 		   		</li>
+          <!-- не тут :) -->
 		   		<a class="button button-item-3" href="order.html">Заказать</a>
 		   	</ul>
 		   </section>
 
 		   <section class="about-us">
 		   	<h2 class="visually-hidden">О нас</h2>
+        <!-- ниже ul и li не очень подходят, делай через div --> 
 		   	<ul class="about-us-list">
 		   		<li class="about-us-item">
 		   			<b>Мы - маленькая, но гордая<br>
@@ -62,6 +76,7 @@
 		   				Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
 		   			</p>
 		   			<h3>Выполняем заказы на разработку:</h3>
+            <!-- Дай какие-то классы списку и элементам ниже -->
 		   			<ul>
 		   				<li>
 		   					Веб-сайтов любой сложности
@@ -77,6 +92,8 @@
 		   		<li class="about-us-item">
 		   			<img src="img/logo2.svg" alt="nerds">
 		   			<h3>С 2004 года любим точность во всем:</h3>
+            <!-- классы добавь, внтури ul не может быть других тегов кроме Li,
+                 и вообще лучше делать через table -->
 		   			<ul>
 		   				<li>146%</li>
 		   				<p>Уровень самоотдачи</p>
@@ -90,6 +107,7 @@
 		   </section>
 
 		   <section class="customers">
+         <!-- опять нужно сделать вместо figures - li, в каждом ли a, а уже в каждом a картинка -->
 		   	<figure class="slides">
 		   		<img src="img/logo1.svg" alt="html-academy">
 		   		<img src="img/logo2.svg" alt="borodinski">
@@ -99,15 +117,17 @@
 		   </section>
 		</main>
 		<footer class="main-footer">
+      <!-- map можно поставить до footer'a, ссылка внутри него не нужна -->
 			<div class="footer-map">
 				<a href="map.html">Карта</a>
 			</div>
 
-			<!--форма
 			<div class="contacts">
+        <!-- блок контактов должен лежать в секции с картой, для адресса используй тег address, nerds - заголовок -->
 				<b>Nerds design studio</b><br>
         		191186, Санкт-Петербург,<br>
         		ул. Б. Конюшная, д.19/8<br>
+            <!-- телефон отдельным тегом -->
         		тел. +7 (812) 275-75-75
         		<a class="button button-contacts" href="write-us.html">Напишите нам</a> -->
 			<div class="footer-social">
