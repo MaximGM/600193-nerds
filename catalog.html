@@ -9,19 +9,31 @@
     <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
 	<header class="main-header">
 		<nav class="main-navigation">
-			<img src="img/logo.svg" alt="nerds">
+			<a>
+				<img src="img/logo.svg" alt="nerds">
+			</a>
 			<ul class="site-navigation">
-				<li><a href="studio">Студия</a></li>
-				<li><a href="customers">Клиенты</a></li>
-				<li><a href="store">Магазин</a></li>
-				<li><a href="contacts">Контакты</a></li>
+				<li>
+					<a href="studio">Студия</a>
+				</li>
+				<li>
+					<a href="customers">Клиенты</a>
+				</li>
+				<li>
+					<a href="store">Магазин</a>
+				</li>
+				<li>
+					<a href="contacts">Контакты</a>
+				</li>
 			</ul>
 			<ul class="basket">
-				<li><a href="basket">Корзина</a></li>
+				<li>
+					<a href="basket">Корзина</a>
+				</li>
 			</ul>
-      <!-- это блок не в теге нав и даже не в хедере, а после-->
 		</nav>
 	</header>
+
 	<main class="container">
 		<h1>Магазин готовых шаблонов</h1>
 		<section class="left-filter">
@@ -35,39 +47,60 @@
 			</ul>
 			<button class="button">Показать</button>
 		</section>
+
 		<section class="portfolio">
 			<p>Сортировать:</p>
 			<ul>
-				<li><button class="button-sort">По цене</button></li>
-				<li><button class="button-sort">По типу</button></li>
-				<li><button class="button-sort">По названию</button></li>
+				<li>
+					<button class="button-sort">По цене</button>
+				</li>
+				<li>
+					<button class="button-sort">По типу</button>
+				</li>
+				<li>
+					<button class="button-sort">По названию</button>
+				</li>
 			</ul>
       <!-- потерял кнопки сортировки -->
 			<ul class="photos">
-        <!-- а форматирование? -->
 				<li>
-          <a href="#">
-            <img src="img/photo-1.jpg" alt="photo-1">
-          </a>
-        </li>
-				<li><a href="#"><img src="img/photo-2.jpg" alt="photo-2"></a></li>
-				<li><a href="#"><img src="img/photo-3.jpg" alt="photo-3"></a></li>
-				<li><a href="#"><img src="img/photo-4.jpg" alt="photo-4"></a></li>
-				<li><a href="#"><img src="img/photo-5.jpg" alt="photo-5"></a></li>
-				<li><a href="#"><img src="img/photo-6.jpg" alt="photo-6"></a></li>
+					<a href="#"><img src="img/photo-1.jpg" alt="photo-1"></a>
+				</li>
+				<li>
+					<a href="#"><img src="img/photo-2.jpg" alt="photo-2"></a>
+				</li>
+				<li>
+					<a href="#"><img src="img/photo-3.jpg" alt="photo-3"></a>
+				</li>
+				<li>
+					<a href="#"><img src="img/photo-4.jpg" alt="photo-4"></a>
+				</li>
+				<li>
+					<a href="#"><img src="img/photo-5.jpg" alt="photo-5"></a>
+				</li>
+				<li>
+					<a href="#"><img src="img/photo-6.jpg" alt="photo-6"></a>
+				</li>
 			</ul>
-      <!-- не совсем понял. Убери тег баттон. Оставь просто li > a.button-page-number-->
           <ul class="page-numbers">
-            <li><button class="button-page-number"><a href="page-1.html">1</a></button></li>
-            <li><button class="button-page-number"><a href="page-2.html">2</a></button></li>
-            <li><button class="button-page-number"><a href="page-3.html">3</a></button></li>
+            <li>
+            	<a class="button-page-number" href="catalog.html">1</a>
+            </li>
+            <li>
+            	<a class="button-page-number" href="catalog.html">2</a>
+            </li>
+            <li>
+            	<a class="button-page-number" href="catalog.html">3</a>
+            </li>
+            <li>
+            	<a class="button-next" href="catalog.html">Следующая</a>
+            </li>
            </ul>
-      <!-- тоже CCЫлка, а не кнопка -->
-			<button class="button-next">Следующая</button>
 		</section>
 	</main>
-	<div class="map">
-				<div class="contacts">
+
+		<div class="map">
+			<div class="contacts">
 				<h2>Nerds design studio</h2>
         		<address>191186, Санкт-Петербург,<br>
         		ул. Б. Конюшная, д.19/8</address>

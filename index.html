@@ -7,93 +7,78 @@
   <body>
 
     <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+
 	<header class="main-header">
 		<nav class="main-navigation">
-      <!-- Извини, не заметил. Img Должен быть обвернут в тег <a> -->
-			<img src="img/logo.svg" alt="nerds">
+			<a href="#">
+				<img src="img/logo.svg" alt="nerds">
+			</a>
 			<ul class="site-navigation">
-				<li><a href="studio">Студия</a></li>
-				<li><a href="customers">Клиенты</a></li>
-				<li><a href="store">Магазин</a></li>
-				<li><a href="contacts">Контакты</a></li>
+				<li>
+					<a href="studio">Студия</a>
+				</li>
+				<li>
+					<a href="customers">Клиенты</a>
+				</li>
+				<li>
+					<a href="store">Магазин</a>
+				</li>
+				<li>
+					<a href="contacts">Контакты</a>
+				</li>
 			</ul>
 			<ul class="basket">
-        <!-- Корзина - тоже ссылкой -->
-				<li><a href="basket">Корзина</a></li>
+				<li>
+					<a href="basket">Корзина</a>
+				</li>
 			</ul>
 		</nav>
+
 		<section class="slider">
-      <!-- в этой секции должен быть список из слайдов. Их всего 3.
-       ul.slides
-         li.slides-item
-          Заголовок сдайда
-          текст слайда
-          кнопка
-          фон слайда будет вставлять не через Img, а через css свойство, так что тут img не надо 
-      -->
       		<ul class="slides">
 				<li class="slides-item">
-          <!-- откуда взялся h1 этих блоках? Используй другой тег ! -->
-					<h1>Долго, дорого, скрупулезно.</h1>
+					<b>Долго, дорого, скрупулезно.</b>
 					<p>Математически выверенный дизайн<br>
 						для вашего сайта или мобильного приложения.
 					</p>
-					<button class="button-slides-1">Узнать больше</button> 
-				</li>
-				<li class="slides-item">
-					<h1>Долго, дорого, скрупулезно.</h1>
-					<p>Математически выверенный дизайн<br>
-						для вашего сайта или мобильного приложения.
-					</p>
-					<button class="button-slides-2">Узнать больше</button> 
-				</li>
-				<li class="slides-item">
-					<h1>Долго, дорого, скрупулезно.</h1>
-					<p>Математически выверенный дизайн<br>
-						для вашего сайта или мобильного приложения.
-					</p>
-					<button class="button-slides-3">Узнать больше</button> 
+					<button class="button-slide">Узнать больше</button> 
 				</li>
 			</ul>
 		</section>
 	</header>
+
 	<main class="container">
-		   <section class="servises">
+		<section class="servises">
 		   	<h2 class="visually-hidden">Услуги</h2>
 		   	<ul class="servises-list">
 		   		<li class="servise-item">
-		   			<h3>Веб-сайты</h3>
-		   			<p>
-		   				Мир никогда не будет прежним, после того как увидит ваш сайт!
-		   			</p>
-            <!-- потерял ссылку -->
-		   		</li>
-          
-          <!-- ссылки должны лежать внутри Li каждого элемента -->
+		   		<h3>Веб-сайты</h3>
+		   		<p>
+		   			Мир никогда не будет прежним, после того как увидит ваш сайт!
+		   		</p>
 		   		<a class="button button-item-1" href="order.html">Заказать</a>
-		   		<li class="servise-item">
-		   			<h3>Приложения</h3>
-		   			<p>
-		   				Покорите топ-10 приложений в AppStore и Google Play
-		   			</p>
-            <!-- потерял ссылку -->
 		   		</li>
+		   			
+		   		<li class="servise-item">
+		   		<h3>Приложения</h3>
+		   		<p>
+		   			Покорите топ-10 приложений в AppStore и Google Play
+		   		</p>
 		   		<a class="button button-item-2" href="order.html">Заказать</a>
-		   		<li class="servise-item">
-		   			<h3>Презентации</h3>
-		   			<p>
-		   				Вы даже не подозреваете, насколько вы изумительны!
-		   			</p>
-            <!-- потерял ссылку -->
 		   		</li>
-          <!-- не тут :) -->
+		   			
+		   		<li class="servise-item">
+		   		<h3>Презентации</h3>
+		   		<p>
+		   			Вы даже не подозреваете, насколько вы изумительны!
+		   		</p>
 		   		<a class="button button-item-3" href="order.html">Заказать</a>
+		   		</li>
 		   	</ul>
-		   </section>
+		</section>
 
-		   <section class="about-us">
+		<section class="about-us">
 		   	<h2 class="visually-hidden">О нас</h2>
-        <!-- ниже ul и li не очень подходят, делай через div --> 
 		   	<div class="about-us-list">
 		   		<div class="about-us-item">
 		   			<b>Мы - маленькая, но гордая<br>
@@ -102,7 +87,6 @@
 		   				Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
 		   			</p>
 		   			<h3>Выполняем заказы на разработку:</h3>
-            <!-- Дай какие-то классы списку и элементам ниже -->
 		   			<ul class="services">
 		   				<li class="service-item">
 		   					Веб-сайтов любой сложности
@@ -118,8 +102,6 @@
 		   		<div class="about-us-item">
 		   			<img src="img/logo2.svg" alt="nerds">
 		   			<h3>С 2004 года любим точность во всем:</h3>
-            <!-- классы добавь, внтури ul не может быть других тегов кроме Li,
-                 и вообще лучше делать через table -->
 		   			<table>
 		   				<tr>
 		   					<td>146%</td>
@@ -137,33 +119,52 @@
 		   </section>
 
 		   <section class="customers">
-         <!-- опять нужно сделать вместо figures - li, в каждом ли a, а уже в каждом a картинка -->
 		   	<ul class="slides">
-		   		<li><a href="htmlacademy.ru"><img src="img/logo1.svg" alt="html-academy"></a></li>
-		   		<li><a href="borodinski.ru"><img src="img/logo2.svg" alt="borodinski"></a></li>
-		   		<li><a href="pink.ru"><img src="img/logo3.svg" alt="pink"></a></li>
-		   		<li><a href="mishka.ru"><img src="img/logo4.svg" alt="mishka"></a></li>
+		   		<li>
+		   			<a href="htmlacademy.ru">
+		   				<img src="img/logo1.svg" alt="html-academy">
+		   			</a>
+		   		</li>
+		   		<li>
+		   			<a href="borodinski.ru">
+		   				<img src="img/logo2.svg" alt="borodinski">
+		   			</a>
+		   		</li>
+		   		<li>
+		   			<a href="pink.ru">
+		   				<img src="img/logo3.svg" alt="pink">
+		   			</a>
+		   		</li>
+		   		<li>
+		   			<a href="mishka.ru">
+		   				<img src="img/logo4.svg" alt="mishka">
+		   			</a>
+		   		</li>
 		   	</ul>
 		   </section>
 		</main>
+
 		<div class="map">
-				<div class="contacts">
-        <!-- блок контактов должен лежать в секции с картой, для адресса используй тег address, nerds - заголовок -->
+			<div class="contacts">
 				<h2>Nerds design studio</h2>
-        		<address>191186, Санкт-Петербург,<br>
-        		ул. Б. Конюшная, д.19/8</address>
-            <!-- телефон отдельным тегом -->
+        		<p>191186, Санкт-Петербург,<br>
+        		ул. Б. Конюшная, д.19/8</p>
         		<p>тел. +7 (812) 275-75-75</p>
         		<a class="button button-contacts" href="write-us.html">Напишите нам</a>
         	</div>
 		</div>
 		<footer class="main-footer">
-      <!-- map можно поставить до footer'a, ссылка внутри него не нужна -->
 			<div class="footer-social">
 				<ul>
-					<li><a class="social-button" href="#">Вконтакте</a></li>
-					<li><a class="social-button" href="#">Фейсбук</a></li>
-					<li><a class="social-button" href="#">Инстаграм</a></li>
+					<li>
+						<a class="social-button" href="#">Вконтакте</a>
+					</li>
+					<li>
+						<a class="social-button" href="#">Фейсбук</a>
+					</li>
+					<li>
+						<a class="social-button" href="#">Инстаграм</a>
+					</li>
 				</ul>
 				<b>Давайте дружить, это выгодно!</b>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
