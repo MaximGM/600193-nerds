@@ -44,22 +44,25 @@
 			</ul>
       <!-- потерял кнопки сортировки -->
 			<ul class="photos">
-        <!-- каждый li - отдельный макет, в котором в своб очередь должна быть ссылка, а там уже картинка -->
-				<li><a href="#"><img src="img/photo-1.jpg" alt="photo-1"></a></li>
+        <!-- а форматирование? -->
+				<li>
+          <a href="#">
+            <img src="img/photo-1.jpg" alt="photo-1">
+          </a>
+        </li>
 				<li><a href="#"><img src="img/photo-2.jpg" alt="photo-2"></a></li>
 				<li><a href="#"><img src="img/photo-3.jpg" alt="photo-3"></a></li>
 				<li><a href="#"><img src="img/photo-4.jpg" alt="photo-4"></a></li>
 				<li><a href="#"><img src="img/photo-5.jpg" alt="photo-5"></a></li>
 				<li><a href="#"><img src="img/photo-6.jpg" alt="photo-6"></a></li>
 			</ul>
-      <!-- если ты пишешь, что это класс баттон, то почему не использовать как минимум button???
-          Вообще это должен быть список, где в каждом ли есть ссылка, с номером страницы -->
+      <!-- не совсем понял. Убери тег баттон. Оставь просто li > a.button-page-number-->
           <ul class="page-numbers">
-			<li><button class="button-page-number"><a href="page-1.html">1</a></button></li>
-			<li><button class="button-page-number"><a href="page-2.html">2</a></button></li>
-			<li><button class="button-page-number"><a href="page-3.html">3</a></button></li>
-		 </ul>
-      <!-- тоже ссылка -->
+            <li><button class="button-page-number"><a href="page-1.html">1</a></button></li>
+            <li><button class="button-page-number"><a href="page-2.html">2</a></button></li>
+            <li><button class="button-page-number"><a href="page-3.html">3</a></button></li>
+           </ul>
+      <!-- тоже CCЫлка, а не кнопка -->
 			<button class="button-next">Следующая</button>
 		</section>
 	</main>
