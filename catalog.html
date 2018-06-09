@@ -5,8 +5,6 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
 	<header class="main-header">
 		<nav class="main-navigation">
 			<a>
@@ -50,16 +48,19 @@
 
 		<section class="portfolio">
 			<p>Сортировать:</p>
-			<ul>
+			<ul class="button-sort">
 				<li>
-          <!-- везде не Button, a ссылки -->
-					<button class="button-sort">По цене</button>
+					<a href="#">По цене</a>
 				</li>
 				<li>
-					<button class="button-sort">По типу</button>
+					<a href="#">По типу</a>
 				</li>
 				<li>
-					<button class="button-sort">По названию</button>
+					<a href="#">По названию</a>
+				</li>
+				<li>
+					<button class="button-sort-down">↓</button>
+					<button class="button-sort-up">↑</button>
 				</li>
 			</ul>
       <!-- потерял кнопки сортировки -->
@@ -85,9 +86,7 @@
 				</li>
 			</ul>
           <ul class="page-numbers">
-            <li>
-            	<a class="button-page-number" href="catalog.html">1</a>
-            </li>
+            <li class="page-numbers-current">1</li>
             <li>
             	<a class="button-page-number" href="catalog.html">2</a>
             </li>
