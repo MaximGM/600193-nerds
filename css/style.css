@@ -79,9 +79,102 @@ a {
 .customers-list {
 	list-style: none;
 }
+======= внутренняя страница =======
 
-.footer-social b {
+.page-title {
+	font-size: 55px;
+	line-height: 55px;
+}
+.filter ul {
+	list-style: none;
+} 
+
+.filter fieldset {
+	border: none;
+} 
+
+.filter legend {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+label {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+	color: #b8b8b8;
+}
+
+.filter-input:hover + label {
+	color: #000000;
+}
+
+.filter-input:disabled + label {
+  color: #ededed;
+
+  opacity: 0.5;
+}
+
+.portfolio p {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.sort-by {
+	list-style: none;
+}
+
+.sort-by a {
+	color: #b2b2b2;
+}
+.sort-by a:hover {
+	color: #666666;
+}
+
+.templates {
+	list-style: none;
+}
+
+.template-item:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+	color: #000000;
+	background-color: #eeeeee;
+}
+
+.pagination-item a:hover {
+	color: #000000;
+	background-color: #dfdfdf;
+}
+
+.pagination-item-current a {
+	color: #000000;
+	background-color: #ffffff;
+	border: 2px solid #dbdbdb;
+}
+
+.pagination-item-current a:hover {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.main-footer b {
 	font-size: 36px;
 	line-height: 36px;
+}
+
+.main-footer ul {
+	list-style: none;
+}
 
 
