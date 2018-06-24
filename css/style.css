@@ -79,7 +79,8 @@ a {
 .customers-list {
 	list-style: none;
 }
-======= внутренняя страница =======
+
+/* ----- внутренняя страница ----- */
 
 .page-title {
 	font-size: 55px;
@@ -177,4 +178,40 @@ label {
 	list-style: none;
 }
 
+/* ----- Сеточные стили ----- */
+html,
+body {
+  	min-width: 1122px;
+  	min-height: 1750px;
+}
 
+.main-header {
+
+ }
+
+.main-navigation {
+	display: flex;
+	justify-content: space-between;
+ }
+
+.main-header-logo {
+	width: 160px;
+	height: 65px;
+}
+
+.site-navigation {
+	display: flex;
+	justify-content: space-around;
+	width: 440px;
+}
+
+.basket {
+	width: 80px;
+}
+
+.container {
+	width: 1160px;
+	margin-right: 20px;
+	margin-left: 20px;
+	padding-top: 45px;
+}
