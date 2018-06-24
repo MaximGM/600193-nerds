@@ -41,6 +41,8 @@ a {
 .slides,
 .slides-switches {
 	list-style: none;
+	margin: 0px;
+	padding: 0px;
 }
 
 .slides-item b {
@@ -61,7 +63,11 @@ a {
 	line-height: 30px;
 }
 
-.about-us-item h3 {
+.about-us {
+	height: 526px;
+}
+
+.about-us-item-1 h3 {
 	font-size: 45px;
 	line-height: 45px;
 }
@@ -137,6 +143,8 @@ label {
 }
 
 .templates {
+	padding: 0;
+  	margin: 0;
 	list-style: none;
 }
 
@@ -210,8 +218,103 @@ body {
 }
 
 .container {
-	width: 1160px;
+	min-width: 1160px;
 	margin-right: 20px;
 	margin-left: 20px;
 	padding-top: 45px;
+}
+
+.slides-item {
+	display: flex;
+}
+
+.slides-item-wrapper-1 {
+	width: 380px;
+}
+
+.slides-item-wrapper-2 {
+	display: none;
+	width: 580px;
+}
+
+.slides-item-wrapper-3 {
+	display: none;
+	width: 460px;
+}
+
+.servises-list {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+  	padding: 0;
+}
+.servise-item {
+	width: 300px;
+}
+
+.about-us-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-us-item-1 {
+	width: 660px;
+}
+
+.about-us-item-2 {
+	width: 360px;
+}
+
+.customers-list {
+	display: flex;
+	justify-content: space-between;
+
+	margin: 0;
+  	padding: 0;
+}
+
+.main-footer .container {
+	display: flex;
+}
+
+.footer-social .social-button {
+	display: flex;
+	width: 260px;
+	margin-right: 140px;
+}
+
+.discount {
+	width: 560px;
+}
+
+/* ----- Внутренняя страница ----- */
+
+.page-title {
+	margin-left: 295px;
+	margin-top: 100px;
+	padding-bottom: 115px;
+}
+
+.portfolio-columns {
+	display: flex;
+	justify-content: space-between;
+}
+
+.filters {
+	width: 260px;
+}
+
+.portfolio {
+	width: 760px;
+}
+
+.templates {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.template-item {
+	width: 360px;
+	margin-bottom: 35px;
+	margin-right: 20px;
 }
