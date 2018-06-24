@@ -7,15 +7,16 @@ body {
   	line-height: 24px;
   	font-weight: 400;
   	color: #283136;
+  	background-color: #eeeeee;
 }
 
 a {
   text-decoration: none;
 }
 
-.main-header {
+/*.main-header {
 	background-color: #eeeeee;
-}
+}*/
 
 .main-navigation {
 	color: #000000;
@@ -187,104 +188,137 @@ label {
 }
 
 /* ----- Сеточные стили ----- */
-html,
+/*html,
 body {
   	min-width: 1122px;
   	min-height: 1750px;
-}
-
-.main-header {
-
- }
-
-.main-navigation {
-	display: flex;
-	justify-content: space-between;
- }
-
-.main-header-logo {
-	width: 160px;
-	height: 65px;
-}
-
-.site-navigation {
-	display: flex;
-	justify-content: space-around;
-	width: 440px;
-}
-
-.basket {
-	width: 80px;
-}
+}*/
 
 .container {
-	min-width: 1160px;
+	min-width:: 1160px;
 	margin-right: 20px;
 	margin-left: 20px;
 	padding-top: 45px;
 }
 
+.main-navigation {
+	display: flex;
+ }
+
+.main-header-logo {
+	width: 160px;
+	height: 65px;
+	margin-right: 200px;
+}
+
+.site-navigation {
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	justify-content: space-around;
+	min-width: 440px;
+}
+
+.basket {
+	margin: 0;
+	padding: 0;
+
+	margin-left: 280px;
+}
+
 .slides-item {
+	margin: 0;
+	padding: 0;
+
 	display: flex;
 }
 
 .slides-item-wrapper-1 {
-	width: 380px;
+	display: flex;
+	flex-direction: column;
 }
 
 .slides-item-wrapper-2 {
 	display: none;
-	width: 580px;
+	
 }
 
 .slides-item-wrapper-3 {
 	display: none;
-	width: 460px;
+	
+}
+
+.servises {
+	background-color: white;
 }
 
 .servises-list {
-	display: flex;
-	justify-content: space-between;
 	margin: 0;
   	padding: 0;
+
+	display: flex;
+	justify-content: space-between;
 }
 .servise-item {
-	width: 300px;
+	
+}
+
+.about-us {
+	background-color: white;
 }
 
 .about-us-list {
+	margin: 0;
+  	padding: 0;
+
 	display: flex;
 	justify-content: space-between;
 }
 
 .about-us-item-1 {
-	width: 660px;
+	
 }
 
 .about-us-item-2 {
-	width: 360px;
+	
+}
+
+.customers {
+	background-color: white;
 }
 
 .customers-list {
-	display: flex;
-	justify-content: space-between;
-
 	margin: 0;
   	padding: 0;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.map {
+	background-color: white;
+}
+
+.main-footer {
+	background-color: white;
 }
 
 .main-footer .container {
 	display: flex;
+	flex-direction: column;
 }
 
-.footer-social .social-button {
+.social-button {
+	margin: 0;
+  	padding: 0;
+
 	display: flex;
-	width: 260px;
 	margin-right: 140px;
 }
 
 .discount {
-	width: 560px;
+	
 }
 
 /* ----- Внутренняя страница ----- */
@@ -298,14 +332,15 @@ body {
 .portfolio-columns {
 	display: flex;
 	justify-content: space-between;
+	background-color: white;
 }
 
 .filters {
-	width: 260px;
+	/*width: 260px;*/
 }
 
 .portfolio {
-	width: 760px;
+	/*min-width: 760px;*/
 }
 
 .templates {
@@ -314,7 +349,7 @@ body {
 }
 
 .template-item {
-	width: 360px;
+	/*width: 360px;*/
 	margin-bottom: 35px;
-	margin-right: 20px;
+	margin-right: 40px;
 }
