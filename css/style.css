@@ -19,7 +19,6 @@ a {
 	width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
-	outline: 2px solid red;
 }
 
 .visually-hidden {
@@ -248,6 +247,15 @@ a {
   	border: none;
 }
 
+.button:hover {
+	background-color: #e74246;
+}
+
+.button:active {
+	color: #e37376;
+	background-color: #e74246;
+}
+
 /*----------main----------*/
 
 .servises {
@@ -306,12 +314,39 @@ a {
 	background-color: #fb565a;
 }
 
+.button-item-servise-1:hover {
+	background-color: #e74246;
+}
+
+.button-item-servise-1:active {
+	color: #e37376;
+	background-color: #d7373b;
+}
+
 .button-item-servise-2 {
 	background-color: #00ca74;
 }
 
+.button-item-servise-2:hover {
+	background-color: #00bc6c;
+}
+
+.button-item-servise-2:active {
+	color: #4dc491;
+	background-color: #00aa62;
+}
+
 .button-item-servise-3 {
 	background-color: #efc84a;
+}
+
+.button-item-servise-3:hover {
+	background-color: #eab534;
+}
+
+.button-item-servise-3:active {
+	color: #edc265;
+	background-color: #eab534;
 }
 
 .servise-item:last-child {
@@ -332,10 +367,6 @@ a {
 	justify-content: space-between;
 }
 
-.about-us-item-1 {
-	
-}
-
 .about-us-item-1 h3, p, b {
 	margin: 0;
   	padding: 0;
@@ -349,10 +380,6 @@ a {
 
 .about-us-item-1 p {
 	margin-bottom: 40px;
-}
-
-.about-us-item-1 b {
-	text-transform: uppercase;
 }
 
 .about-us-item-2 {
@@ -484,10 +511,63 @@ a {
 	background: #fb565a;
 }
 
+.button-contacts:hover {
+	background-color: #e74246;
+}
+
+.button-contacts:active {
+	color: #e37376;
+	background-color: #e74246;
+}
+
 .social-button {
+	display: flex;
+	align-items: center;
+ 	justify-content: center;
 	width: 80px;
 	height: 80px;
 	background-color: #000000;
+	border-radius: 50%;
+	background-color: #e1e1e1;
+}
+
+.social-button:hover {
+	background-color: #e74246;
+}
+
+.social-button:active {
+	background-color: #d7373b;
+}
+
+.social-button:active path {
+	fill: #e37376;
+}
+
+.footer-social ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 260px;
+	margin-right: 140px;
+
+	list-style: none;
+}
+
+.main-footer .container {
+	display: flex;
+	margin-top: 65px;
+	margin-bottom: 65px;
+}
+
+.discount b, p {
+	margin: 0;
+	padding: 0;
+
+	display: block;
+
+	margin-bottom: 10px;
 }
 
 
@@ -617,17 +697,9 @@ label {
 	background-color: #ffffff;
 }
 
-.main-footer {
-	border: 2px solid pink;
-}
-
 .main-footer b {
 	font-size: 36px;
 	line-height: 36px;
-}
-
-.main-footer ul {
-	list-style: none;
 }
 
 /* ----- Сеточные стили ----- */
@@ -642,23 +714,6 @@ label {
 	height: 65px;
 	margin-right: 200px;
 	margin-top: 45px;
-}
-
-.footer-social {
-	display: flex;
-	/*flex-direction: column;*/
-}
-
-.social-button {
-	margin: 0;
-  	padding: 0;
-
-	display: flex;
-	margin-right: 140px;
-}
-
-.discount {
-	
 }
 
 /* ----- Внутренняя страница ----- */
