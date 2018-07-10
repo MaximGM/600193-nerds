@@ -32,6 +32,13 @@ a {
   background-color: #eeeeee;
 }
 
+.main-header-logo {
+	width: 160px;
+	height: 65px;
+	margin-right: 200px;
+	margin-top: 45px;
+}
+
 .main-navigation {
 	display: flex;
 	color: #000000;
@@ -120,6 +127,11 @@ a {
   	margin-bottom: 80px;
 
   	background-color: #eeeeee;
+}
+
+.container {
+	margin-right: 20px;
+	margin-left: 20px;
 }
 
 .slider-list {
@@ -378,8 +390,37 @@ a {
 	margin-bottom: 30px;
 }
 
-.about-us-item-1 p {
-	margin-bottom: 40px;
+.about-us-item-1 b {
+	margin: 0;
+	display: block;
+	text-transform: uppercase;
+	margin-top: 35px;
+}
+
+.custom-list-1 {
+	margin-top: 25px;
+	padding: 0;
+
+	list-style: none;
+}
+
+.custom-list-1 li {
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 25px;
+}
+
+.custom-list-1 li::before {
+	content: "";
+
+	position: absolute;
+	top: 11px;
+	left: 0px;
+
+	width: 25px;
+	height: 2px;
+
+	background-color: #fb565a;
 }
 
 .about-us-item-2 {
@@ -459,6 +500,8 @@ a {
 	margin-top: 50px;
 }
 
+/*----------footer----------*/
+
 .map {
 	width: 1200px;
 	height: 417px;
@@ -474,6 +517,12 @@ a {
 	background: white;
 	margin-top: 55px;
 	text-align: center;
+}
+
+.contacts img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
 }
 
 .contacts h2, p {
@@ -561,6 +610,11 @@ a {
 	margin-bottom: 65px;
 }
 
+.main-footer b {
+	font-size: 36px;
+	line-height: 36px;
+}
+
 .discount b, p {
 	margin: 0;
 	padding: 0;
@@ -569,7 +623,6 @@ a {
 
 	margin-bottom: 10px;
 }
-
 
 /* ----- внутренняя страница ----- */
 
@@ -631,6 +684,9 @@ label {
 
 .sort-menu {
 	display: flex;
+	align-items: center;
+	padding-bottom: 40px;
+	padding-top: 40px;
 }
 
 .sort-by {
@@ -664,21 +720,57 @@ label {
   	margin-left: auto;
 
 	list-style: none;
-
-	/*border: 2px solid pink;*/
 }
 
 .sort-arrows a {
 	color: #000000;
 }
 
+.sort-arrows li:last-child {
+	margin-left: 15px;
+	opacity: 0.2;
+}
+
+.templates-list {
+	padding: 0;
+  	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
 .template-item:hover {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.pagination-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+  	padding: 0;
+  	list-style: none;
+  	margin-bottom: 50px;
+}
+
+.pagination-list li:last-child {
+  	width: 260px;
+  	text-align: center;
+}
+
+.pagination-item {
+	margin-right: 10px;
+}
+
 .pagination-item a {
+	display: block;
+	padding: 10px 19px;
 	color: #000000;
 	background-color: #eeeeee;
+	text-transform: uppercase;
+	font-weight: 500;
+	border-radius: 3px;
 }
 
 .pagination-item a:hover {
@@ -688,32 +780,14 @@ label {
 
 .pagination-item-current a {
 	color: #000000;
+	padding: 7px 16px;
 	background-color: #ffffff;
-	border: 2px solid #dbdbdb;
+	border: 3px solid #dbdbdb;
 }
 
 .pagination-item-current a:hover {
 	color: #000000;
 	background-color: #ffffff;
-}
-
-.main-footer b {
-	font-size: 36px;
-	line-height: 36px;
-}
-
-/* ----- Сеточные стили ----- */
-
-.container {
-	margin-right: 20px;
-	margin-left: 20px;
-}
-
-.main-header-logo {
-	width: 160px;
-	height: 65px;
-	margin-right: 200px;
-	margin-top: 45px;
 }
 
 /* ----- Внутренняя страница ----- */
@@ -740,41 +814,6 @@ label {
 	/*border: 2px solid pink;*/
 }
 
-.templates-list {
-	padding: 0;
-  	margin: 0;
-	display: flex;
-	flex-wrap: wrap;
-	list-style: none;
-	justify-content: space-between;
-	margin-bottom: 60px;
-
-	/*border: 2px solid pink;*/
-}
-
 .template-item {
 	margin-bottom: 20px;
-}
-
-.pagination-list {
-
-	display: flex;
-	margin: 0;
-  	padding: 0;
-
-  	list-style: none;
-
-  	border: 2px solid pink;
-}
-
-.pagination-item {
-	margin-left: 10px;
-}
-
-/* ------------------ */
-
-.contacts img {
-	width: 100%;
-	max-width: 100%;
-	height: auto;
 }
